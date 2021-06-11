@@ -1,4 +1,3 @@
-
 ---
 title: "Linux"
 linkTitle: "Linux"
@@ -154,4 +153,33 @@ lvextend -L <expected_size> <logical_volume>
 lvremove <LS_path>
 ```
 
+## LDAP
 
+### Delete from ldap
+
+```bash
+ldapdelete -x -h <domain_controller> 'CN=<SERVER>,OU=<OU1>,OU=<OU2>,DC=example,DC=com' -D '<user_account> -w <user_password>
+```
+
+### Net ADs Commands
+
+#### Join
+```bash
+netads join -U 'user_account%password'
+```
+#### Leave
+
+```bash
+netads leave -U 'user_account%password'
+```
+
+### Keytab Count
+```bash
+klist -t -k /etc/krb5.keytab | wc -l
+```
+
+## Find Large files
+
+```bash
+find <dir> -xdev -type f -size 40000 -exec ls -hl {} \; | sort -n -k 5
+```
