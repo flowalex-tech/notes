@@ -2,6 +2,11 @@
 ---
 title: "ECO Holiday Party"
 ---
+
+## How to Join:
+
+Go to [jackbox.tv](jackbox.tv) and enter the room code
+
 [Jackbox Party Pack 3](https://www.jackboxgames.com/party-pack-three/)
 
 ### Quiplash 2
