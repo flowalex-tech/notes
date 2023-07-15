@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Docs</title>
+    <link href="/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="/"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2019-02-02T00:00:00+00:00</updated>
+    <id>/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Chef</title>
+        <published>2019-02-02T00:00:00+00:00</published>
+        <updated>2019-02-02T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="/chef/" type="text/html"/>
+        <id>/chef/</id>
+        
+        <content type="html">&lt;h2 id=&quot;delete-a-node-from-chef&quot;&gt;Delete a Node from Chef&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;knife&lt;&#x2F;span&gt;&lt;span&gt; node delete &amp;lt;nodename&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;knife&lt;&#x2F;span&gt;&lt;span&gt; client delete &amp;lt;nodename&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Linux</title>
+        <published>2019-02-02T00:00:00+00:00</published>
+        <updated>2019-02-02T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="/linux/" type="text/html"/>
+        <id>/linux/</id>
+        
+        <content type="html">&lt;h2 id=&quot;debugging-bash-scripts&quot;&gt;Debugging Bash Scripts&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#888888;&quot;&gt;#! &#x2F;bin&#x2F;bash -x
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;outputs everything from the script&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;set -x&lt;&#x2F;code&gt; to enable debugging at a certain spot and &lt;code&gt;set +x&lt;&#x2F;code&gt; to the end&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;clear-zsh-history&quot;&gt;Clear ZSH history&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open &lt;code&gt;.zsh_history&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Delete the lines you want removed and save the file&lt;&#x2F;li&gt;
+&lt;li&gt;Restart your terminal&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;useful-commands&quot;&gt;Useful Commands&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;force-a-password-change&quot;&gt;Force a Password Change&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;chage -d&lt;&#x2F;span&gt;&lt;span&gt; 0 &amp;lt;user&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;redhat-centos-oracle-linux-version&quot;&gt;Redhat&#x2F;CentOS&#x2F;Oracle Linux Version&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;cat&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;etc&#x2F;redhat-release
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;cat&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;etc&#x2F;oracle-release
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;get-all-installed-linux-kernels&quot;&gt;Get All Installed Linux Kernels&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;uname -a
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;get-vm-serial-number&quot;&gt;Get VM Serial Number&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; dmidecode&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt; -t&lt;&#x2F;span&gt;&lt;span&gt; system | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;grep&lt;&#x2F;span&gt;&lt;span&gt; Serial
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;force-reboot-host&quot;&gt;Force Reboot Host&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;systemd hosts that aren&#x27;t responding&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;sudo&lt;&#x2F;span&gt;&lt;span&gt; systemctl&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt; --force --force&lt;&#x2F;span&gt;&lt;span&gt; reboot
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;run-logrotate-manually&quot;&gt;Run logrotate Manually&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;&#x2F;usr&#x2F;sbin&#x2F;logrotate&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;etc&#x2F;logrotate.conf
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;check-for-redhat-packages&quot;&gt;Check for RedHat Packages&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;rpm -qa --queryformat&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#99ad6a;&quot;&gt;%{NAME}-%{VERSION}-%{RELEASE}.%{ARCH} - %{VENDOR}\n&lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;grep &lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#99ad6a;&quot;&gt;Red Hat&lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;swap&quot;&gt;Swap&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;disable-swap&quot;&gt;Disable Swap&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;swapoff
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;enable-swap&quot;&gt;Enable Swap&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;swapon
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;logical-volume-management&quot;&gt;Logical Volume Management&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;creating-a-filesystem-xfs&quot;&gt;Creating a Filesystem (XFS)&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;lvcreate  -L &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;size&amp;gt; &amp;lt;LVname&amp;gt; &amp;lt;VG&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;mkfs.xfs &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;path_to_LV&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;mkdir -p &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;mount_point_location&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;cp -p&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;etc&#x2F;fstab &#x2F;etc&#x2F;fstab_&amp;lt;mount_point&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;echo &lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#99ad6a;&quot;&gt;&amp;lt;filesystem_path&amp;gt; &amp;lt;location_of_mount_point&amp;gt; xfs defaults,nofail 0 0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;&amp;gt; &#x2F;etc&#x2F;fstab
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;systemctl&lt;&#x2F;span&gt;&lt;span&gt; daemon-reload
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;mount &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;filesystem_mount_point&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;expanding-a-filesystem&quot;&gt;Expanding a Filesystem&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;xfs&quot;&gt;XFS&lt;&#x2F;h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Extend the logical volume&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;lvextend -L&lt;&#x2F;span&gt;&lt;span&gt; +&amp;lt;size_to_add&amp;gt; &amp;lt;logical_volume&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;lvextend -L &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;expected_size&amp;gt; &amp;lt;logical_volume&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Resize filesystem to fill logical volume&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;xfs_growfs &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;mount_point&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;ext&quot;&gt;EXT&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;lvextend -L&lt;&#x2F;span&gt;&lt;span&gt; +&amp;lt;size_to_add&amp;gt; &amp;lt;logical_volume&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;lvextend -L &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;expected_size&amp;gt; &amp;lt;logical_volume&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;repair-xfs-filesystem&quot;&gt;Repair XFS Filesystem&lt;&#x2F;h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Unmount Filesystem&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;umount &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;fs_mount_point&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ol start=&quot;2&quot;&gt;
+&lt;li&gt;Run XFS_repair&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;xfs_repair &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;full_path_of_logical_volume&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;physical-volume&quot;&gt;Physical Volume&lt;&#x2F;h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Create a volume&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;pvcreate &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;device_name&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;volume-groups&quot;&gt;Volume Groups&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;vgcreate&quot;&gt;VGCreate&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;vgcreate -cn &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;vgname&amp;gt; &amp;lt;disk_path&amp;gt; &amp;lt;disk_path...&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;vgextend&quot;&gt;VGExtend&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;vgextend &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;device_name_of_VG&amp;gt; &amp;lt;device_name_of_PV&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;vgreduce&quot;&gt;VGReduce&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;vgreduce &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;device_name_of_VG&amp;gt; &amp;lt;device_name_of_PV&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;logical-volumes&quot;&gt;Logical Volumes&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;lvcreate&quot;&gt;LVCreate&lt;&#x2F;h4&gt;
+&lt;p&gt;Option 1&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;lvcreate -L &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;size&amp;gt; -n &amp;lt;name_of_LV&amp;gt; &amp;lt;VG_name&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Option 2&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;lvcreate -l &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;number_of_extents&amp;gt; -n &amp;lt;name_of_LV&amp;gt; &amp;lt;VG_name&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;lvextend&quot;&gt;LVExtend&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;lvextend -L&lt;&#x2F;span&gt;&lt;span&gt; +&amp;lt;size_to_add&amp;gt; &amp;lt;logical_volume&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;lvextend -L &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;expected_size&amp;gt; &amp;lt;logical_volume&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;lvremove&quot;&gt;LVRemove&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;lvremove &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;LS_path&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;ldap&quot;&gt;LDAP&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;delete-from-ldap&quot;&gt;Delete from ldap&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;ldapdelete -x -h &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;domain_controller&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#99ad6a;&quot;&gt;CN=&amp;lt;SERVER&amp;gt;,OU=&amp;lt;OU1&amp;gt;,OU=&amp;lt;OU2&amp;gt;,DC=example,DC=com&lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt; -D &lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#99ad6a;&quot;&gt;&amp;lt;user_account&amp;gt; -w &amp;lt;user_password&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;net-ads-commands&quot;&gt;Net ADs Commands&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;join&quot;&gt;Join&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;netads&lt;&#x2F;span&gt;&lt;span&gt; join&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt; -U &lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#99ad6a;&quot;&gt;user_account%password&lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;#39;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;leave&quot;&gt;Leave&lt;&#x2F;h4&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;netads&lt;&#x2F;span&gt;&lt;span&gt; leave&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt; -U &lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#99ad6a;&quot;&gt;user_account%password&lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;#39;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;keytab-count&quot;&gt;Keytab Count&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;klist -t -k&lt;&#x2F;span&gt;&lt;span&gt; &#x2F;etc&#x2F;krb5.keytab | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;wc -l
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;find-large-files&quot;&gt;Find Large files&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;find &lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;dir&amp;gt; -xdev&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt; -type&lt;&#x2F;span&gt;&lt;span&gt; f&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt; -size&lt;&#x2F;span&gt;&lt;span&gt; 40000&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt; -exec&lt;&#x2F;span&gt;&lt;span&gt; ls&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt; -hl &lt;&#x2F;span&gt;&lt;span&gt;{} \; | &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;sort -n -k&lt;&#x2F;span&gt;&lt;span&gt; 5
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>New Relic</title>
+        <published>2019-02-02T00:00:00+00:00</published>
+        <updated>2019-02-02T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="/new-relic/" type="text/html"/>
+        <id>/new-relic/</id>
+        
+        <content type="html">&lt;h2 id=&quot;new-relic&quot;&gt;New Relic&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;average-duration-nrql&quot;&gt;Average duration nrql&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;SQL&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-SQL &quot;&gt;&lt;code class=&quot;language-SQL&quot; data-lang=&quot;SQL&quot;&gt;&lt;span&gt;SELECT average(duration) FROM Transaction WHERE &amp;lt;params&amp;gt; Since &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; week ago TIMESERIES &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; hour FACET &amp;lt;param&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;99th-percentile&quot;&gt;99th Percentile&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt;SELECT percentile(duration,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;99&lt;&#x2F;span&gt;&lt;span&gt;) FROM Transaction WHERE &amp;lt;params&amp;gt; Since &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; week ago TIMESERIES &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; hour FACET &amp;lt;param&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;traffic-levels&quot;&gt;Traffic Levels&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt;SELECT count(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;) FROM Transaction WHERE &amp;lt;params&amp;gt; Since &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; week ago TIMESERIES &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; hour FACET &amp;lt;param&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;percent-of-errors-eg-500s&quot;&gt;Percent of Errors (eg 500s)&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt;SELECT percentage(count(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;), WHERE httpResponseCode LIKE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#99ad6a;&quot;&gt;5%%&lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;) FROM Transaction  SINCE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; hour ago TIMESERIES FACET name
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+</feed>
