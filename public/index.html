@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Docs</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noodp"/>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/color/blue.css">
+
+    <link rel="stylesheet" href="/font-hack.css">
+
+            
+        <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
+    
+    </head>
+
+<body class="">
+<div class="container">
+    
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                    
+                <a href="/" style="text-decoration: none;">
+                    <div class="logo">
+                      
+                            Docs
+                        
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
+        
+                <nav class="menu">
+            <ul class="menu__inner">
+                <li class="active"><a href="/">Docs</a></li>
+            
+                <li><a href="//tags">tags</a></li>
+            
+                <li><a href="https://github.com/flowalex-tech/notes" target="_blank" rel="noopener noreferrer">github</a></li>
+            </ul>
+        </nav>
+    
+    
+        
+    </header>
+    
+
+    <div class="content">
+        
+        <div class="posts">
+                <div class="post on-list">
+                    
+    <h1 class="post-title"><a href="/chef/">Chef</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2019-02-02
+        </span>
+
+    </div>
+
+    
+        <span class="post-tags-inline">
+                :: tags:&nbsp;
+                <a class="post-tag" href="/tags/automation/">#automation</a>&nbsp;
+                <a class="post-tag" href="/tags/tools/">#tools</a></span>
+    
+
+                    
+        <div class="post-content">
+            <h2 id="delete-a-node-from-chef">Delete a Node from Chef</h2>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">knife</span><span> node delete &lt;nodename&gt;
+</span><span style="color:#ffb964;">knife</span><span> client delete &lt;nodename&gt;
+</span></code></pre>
+
+        </div>
+
+                </div>
+            
+                <div class="post on-list">
+                    
+    <h1 class="post-title"><a href="/linux/">Linux</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2019-02-02
+        </span>
+
+    </div>
+
+    
+        <span class="post-tags-inline">
+                :: tags:&nbsp;
+                <a class="post-tag" href="/tags/os/">#os</a></span>
+    
+
+                    
+        <div class="post-content">
+            <h2 id="debugging-bash-scripts">Debugging Bash Scripts</h2>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#888888;">#! /bin/bash -x
+</span></code></pre>
+<ul>
+<li>outputs everything from the script</li>
+<li><code>set -x</code> to enable debugging at a certain spot and <code>set +x</code> to the end</li>
+</ul>
+<h2 id="clear-zsh-history">Clear ZSH history</h2>
+<ol>
+<li>Open <code>.zsh_history</code></li>
+<li>Delete the lines you want removed and save the file</li>
+<li>Restart your terminal</li>
+</ol>
+<h2 id="useful-commands">Useful Commands</h2>
+<h3 id="force-a-password-change">Force a Password Change</h3>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">chage -d</span><span> 0 &lt;user&gt;
+</span></code></pre>
+<h3 id="redhat-centos-oracle-linux-version">Redhat/CentOS/Oracle Linux Version</h3>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">cat</span><span> /etc/redhat-release
+</span><span style="color:#ffb964;">cat</span><span> /etc/oracle-release
+</span></code></pre>
+<h3 id="get-all-installed-linux-kernels">Get All Installed Linux Kernels</h3>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">uname -a
+</span></code></pre>
+<h3 id="get-vm-serial-number">Get VM Serial Number</h3>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">sudo</span><span> dmidecode</span><span style="color:#ffb964;"> -t</span><span> system | </span><span style="color:#ffb964;">grep</span><span> Serial
+</span></code></pre>
+<h3 id="force-reboot-host">Force Reboot Host</h3>
+<blockquote>
+<p>systemd hosts that aren't responding</p>
+</blockquote>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">sudo</span><span> systemctl</span><span style="color:#ffb964;"> --force --force</span><span> reboot
+</span></code></pre>
+<h3 id="run-logrotate-manually">Run logrotate Manually</h3>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">/usr/sbin/logrotate</span><span> /etc/logrotate.conf
+</span></code></pre>
+<h3 id="check-for-redhat-packages">Check for RedHat Packages</h3>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">rpm -qa --queryformat</span><span>=</span><span style="color:#556633;">&quot;</span><span style="color:#99ad6a;">%{NAME}-%{VERSION}-%{RELEASE}.%{ARCH} - %{VENDOR}\n</span><span style="color:#556633;">&quot; </span><span>| </span><span style="color:#ffb964;">grep </span><span style="color:#556633;">&quot;</span><span style="color:#99ad6a;">Red Hat</span><span style="color:#556633;">&quot;
+</span></code></pre>
+<h3 id="swap">Swap</h3>
+<h4 id="disable-swap">Disable Swap</h4>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">swapoff
+</span></code></pre>
+<h4 id="enable-swap">Enable Swap</h4>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">swapon
+</span></code></pre>
+<h2 id="logical-volume-management">Logical Volume Management</h2>
+<h3 id="creating-a-filesystem-xfs">Creating a Filesystem (XFS)</h3>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">lvcreate  -L </span><span>&lt;size&gt; &lt;LVname&gt; &lt;VG&gt;
+</span><span style="color:#ffb964;">mkfs.xfs </span><span>&lt;path_to_LV&gt;
+</span><span style="color:#ffb964;">mkdir -p </span><span>&lt;mount_point_location&gt;
+</span><span style="color:#ffb964;">cp -p</span><span> /etc/fstab /etc/fstab_&lt;mount_point&gt;
+</span><span>echo </span><span style="color:#556633;">&quot;</span><span style="color:#99ad6a;">&lt;filesystem_path&gt; &lt;location_of_mount_point&gt; xfs defaults,nofail 0 0</span><span style="color:#556633;">&quot; </span><span>&gt;&gt; /etc/fstab
+</span><span style="color:#ffb964;">systemctl</span><span> daemon-reload
+</span><span style="color:#ffb964;">mount </span><span>&lt;filesystem_mount_point&gt;
+</span></code></pre>
+<h3 id="expanding-a-filesystem">Expanding a Filesystem</h3>
+<h4 id="xfs">XFS</h4>
+<ol>
+<li>Extend the logical volume</li>
+</ol>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">lvextend -L</span><span> +&lt;size_to_add&gt; &lt;logical_volume&gt;
+</span><span style="color:#ffb964;">lvextend -L </span><span>&lt;expected_size&gt; &lt;logical_volume&gt;
+</span></code></pre>
+<ol start="2">
+<li>Resize filesystem to fill logical volume</li>
+</ol>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">xfs_growfs </span><span>&lt;mount_point&gt;
+</span></code></pre>
+<h4 id="ext">EXT</h4>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">lvextend -L</span><span> +&lt;size_to_add&gt; &lt;logical_volume&gt;
+</span><span style="color:#ffb964;">lvextend -L </span><span>&lt;expected_size&gt; &lt;logical_volume&gt;
+</span></code></pre>
+<h3 id="repair-xfs-filesystem">Repair XFS Filesystem</h3>
+<ol>
+<li>Unmount Filesystem</li>
+</ol>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">umount </span><span>&lt;fs_mount_point&gt;
+</span></code></pre>
+<ol start="2">
+<li>Run XFS_repair</li>
+</ol>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">xfs_repair </span><span>&lt;full_path_of_logical_volume&gt;
+</span></code></pre>
+<h3 id="physical-volume">Physical Volume</h3>
+<blockquote>
+<p>Create a volume</p>
+</blockquote>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">pvcreate </span><span>&lt;device_name&gt;
+</span></code></pre>
+<h3 id="volume-groups">Volume Groups</h3>
+<h4 id="vgcreate">VGCreate</h4>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">vgcreate -cn </span><span>&lt;vgname&gt; &lt;disk_path&gt; &lt;disk_path...&gt;
+</span></code></pre>
+<h4 id="vgextend">VGExtend</h4>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">vgextend </span><span>&lt;device_name_of_VG&gt; &lt;device_name_of_PV&gt;
+</span></code></pre>
+<h4 id="vgreduce">VGReduce</h4>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">vgreduce </span><span>&lt;device_name_of_VG&gt; &lt;device_name_of_PV&gt;
+</span></code></pre>
+<h3 id="logical-volumes">Logical Volumes</h3>
+<h4 id="lvcreate">LVCreate</h4>
+<p>Option 1</p>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">lvcreate -L </span><span>&lt;size&gt; -n &lt;name_of_LV&gt; &lt;VG_name&gt;
+</span></code></pre>
+<p>Option 2</p>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">lvcreate -l </span><span>&lt;number_of_extents&gt; -n &lt;name_of_LV&gt; &lt;VG_name&gt;
+</span></code></pre>
+<h4 id="lvextend">LVExtend</h4>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">lvextend -L</span><span> +&lt;size_to_add&gt; &lt;logical_volume&gt;
+</span><span style="color:#ffb964;">lvextend -L </span><span>&lt;expected_size&gt; &lt;logical_volume&gt;
+</span></code></pre>
+<h4 id="lvremove">LVRemove</h4>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">lvremove </span><span>&lt;LS_path&gt;
+</span></code></pre>
+<h2 id="ldap">LDAP</h2>
+<h3 id="delete-from-ldap">Delete from ldap</h3>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">ldapdelete -x -h </span><span>&lt;domain_controller&gt; </span><span style="color:#556633;">&#39;</span><span style="color:#99ad6a;">CN=&lt;SERVER&gt;,OU=&lt;OU1&gt;,OU=&lt;OU2&gt;,DC=example,DC=com</span><span style="color:#556633;">&#39;</span><span style="color:#ffb964;"> -D </span><span style="color:#556633;">&#39;</span><span style="color:#99ad6a;">&lt;user_account&gt; -w &lt;user_password&gt;
+</span></code></pre>
+<h3 id="net-ads-commands">Net ADs Commands</h3>
+<h4 id="join">Join</h4>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">netads</span><span> join</span><span style="color:#ffb964;"> -U </span><span style="color:#556633;">&#39;</span><span style="color:#99ad6a;">user_account%password</span><span style="color:#556633;">&#39;
+</span></code></pre>
+<h4 id="leave">Leave</h4>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">netads</span><span> leave</span><span style="color:#ffb964;"> -U </span><span style="color:#556633;">&#39;</span><span style="color:#99ad6a;">user_account%password</span><span style="color:#556633;">&#39;
+</span></code></pre>
+<h3 id="keytab-count">Keytab Count</h3>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">klist -t -k</span><span> /etc/krb5.keytab | </span><span style="color:#ffb964;">wc -l
+</span></code></pre>
+<h2 id="find-large-files">Find Large files</h2>
+<pre data-lang="bash" style="background-color:#151515;color:#e8e8d3;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffb964;">find </span><span>&lt;dir&gt; -xdev</span><span style="color:#ffb964;"> -type</span><span> f</span><span style="color:#ffb964;"> -size</span><span> 40000</span><span style="color:#ffb964;"> -exec</span><span> ls</span><span style="color:#ffb964;"> -hl </span><span>{} \; | </span><span style="color:#ffb964;">sort -n -k</span><span> 5
+</span></code></pre>
+
+        </div>
+
+                </div>
+            
+                <div class="post on-list">
+                    
+    <h1 class="post-title"><a href="/new-relic/">New Relic</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2019-02-02
+        </span>
+
+    </div>
+
+    
+        <span class="post-tags-inline">
+                :: tags:&nbsp;
+                <a class="post-tag" href="/tags/monitoring/">#monitoring</a>&nbsp;
+                <a class="post-tag" href="/tags/observaility/">#observaility</a></span>
+    
+
+                    
+        <div class="post-content">
+            <h2 id="new-relic">New Relic</h2>
+<h3 id="average-duration-nrql">Average duration nrql</h3>
+<pre data-lang="SQL" style="background-color:#151515;color:#e8e8d3;" class="language-SQL "><code class="language-SQL" data-lang="SQL"><span>SELECT average(duration) FROM Transaction WHERE &lt;params&gt; Since </span><span style="color:#cf6a4c;">1</span><span> week ago TIMESERIES </span><span style="color:#cf6a4c;">1</span><span> hour FACET &lt;param&gt;
+</span></code></pre>
+<h3 id="99th-percentile">99th Percentile</h3>
+<pre data-lang="sql" style="background-color:#151515;color:#e8e8d3;" class="language-sql "><code class="language-sql" data-lang="sql"><span>SELECT percentile(duration,</span><span style="color:#cf6a4c;">99</span><span>) FROM Transaction WHERE &lt;params&gt; Since </span><span style="color:#cf6a4c;">1</span><span> week ago TIMESERIES </span><span style="color:#cf6a4c;">1</span><span> hour FACET &lt;param&gt;
+</span></code></pre>
+<h3 id="traffic-levels">Traffic Levels</h3>
+<pre data-lang="sql" style="background-color:#151515;color:#e8e8d3;" class="language-sql "><code class="language-sql" data-lang="sql"><span>SELECT count(</span><span style="color:#ffb964;">*</span><span>) FROM Transaction WHERE &lt;params&gt; Since </span><span style="color:#cf6a4c;">1</span><span> week ago TIMESERIES </span><span style="color:#cf6a4c;">1</span><span> hour FACET &lt;param&gt;
+</span></code></pre>
+<h3 id="percent-of-errors-eg-500s">Percent of Errors (eg 500s)</h3>
+<pre data-lang="sql" style="background-color:#151515;color:#e8e8d3;" class="language-sql "><code class="language-sql" data-lang="sql"><span>SELECT percentage(count(</span><span style="color:#ffb964;">*</span><span>), WHERE httpResponseCode LIKE </span><span style="color:#556633;">&#39;</span><span style="color:#99ad6a;">5%%</span><span style="color:#556633;">&#39;</span><span>) FROM Transaction  SINCE </span><span style="color:#cf6a4c;">1</span><span> hour ago TIMESERIES FACET name
+</span></code></pre>
+
+        </div>
+
+                </div>
+            <div class="pagination">
+                <div class="pagination__buttons"></div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <footer class="footer">
+        <div class="footer__inner">
+                <div class="copyright">
+                        <span>© 
+    2023
+ Alex Wolf</span>
+                    <span class="copyright-theme">
+                        <span class="copyright-theme-sep">:: </span>
+                        Theme: <a href="https://github.com/pawroman/zola-theme-terminimal/">Terminimal</a> by pawroman
+                    </span>
+                </div>
+            </div>
+    </footer>
+    
+
+</div>
+</body>
+
+</html>
