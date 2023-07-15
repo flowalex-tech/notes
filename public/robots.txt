@@ -1,0 +1,4 @@
+Sitemap: https://docs.flowalex.tech/sitemap.xml
+User-Agent: *
+Allow: /
+Host: https://docs.flowalex.tech
