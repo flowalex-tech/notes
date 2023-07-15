@@ -1,4 +1,4 @@
 
-[submodule "themes/abridge"]
-	path = themes/abridge
-	url = https://github.com/jieiku/abridge.git
+[submodule "themes/terminimal"]
+	path = themes/terminimal
+	url = https://github.com/pawroman/zola-theme-terminimal.git
